@@ -3,13 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rn.github.io/posts/2018-07-22-blog/</loc>
+    <lastmod>2018-07-22T17:55:15+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://rn.github.io/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://rn.github.io/posts/</loc>
+    <lastmod>2018-07-22T17:55:15+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://rn.github.io/</loc>
+    <lastmod>2018-07-22T17:55:15+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>

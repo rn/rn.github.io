@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Rolf Neugebauer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Jul 2018 17:55:15 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jul 2018 11:07:40 +0100</lastBuildDate>
     
 	<atom:link href="https://rn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GnuPG and YubiKey</title>
+      <link>https://rn.github.io/posts/2018-07-27-gpg-yubikey/</link>
+      <pubDate>Fri, 27 Jul 2018 11:07:40 +0100</pubDate>
+      
+      <guid>https://rn.github.io/posts/2018-07-27-gpg-yubikey/</guid>
+      <description>This creates a master key and secondary keys. The latter are stred on multiple YubiKeys. It mostly follows this great post with some additions from here, here. and here.
+Unless otherwise specified I use:
+export GNUPGHOME=~/gnupg mkdir $GNUPGHOME chmod go-rwx $GNUPGHOME export GNUPGBAK=~/gnupg-save mkdir $GNUPGBAK chmod go-rwx $GNUPGBAK  Preparing the YubiKey Note: The default admin pin is 12345678 and the default user pin is 123456. We start with a YubiKey after a factory reset (gpg --card-edit -&amp;gt; admin -&amp;gt; factory-reset).</description>
+    </item>
     
     <item>
       <title>Blogging with hugo and GitHub Pages</title>

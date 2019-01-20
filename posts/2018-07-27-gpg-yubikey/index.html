@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Rolf Neugebauer&#39;s Blog </title>
+    <title>Rolf Neugebauer&#39;s Blog  | GnuPG and YubiKey</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -27,22 +27,33 @@
     
 
     
-      <link href="https://rn.github.io/posts/index.xml" rel="alternate" type="application/rss+xml" title="Rolf Neugebauer&#39;s Blog" />
-      <link href="https://rn.github.io/posts/index.xml" rel="feed" type="application/rss+xml" title="Rolf Neugebauer&#39;s Blog" />
-    
 
-    <meta property="og:title" content="Posts" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://rn.github.io/posts/" />
-<meta property="og:updated_time" content="2018-07-27T11:07:40&#43;01:00"/>
+    <meta property="og:title" content="GnuPG and YubiKey" />
+<meta property="og:description" content="This creates a master key and secondary keys. The latter are stred on multiple YubiKeys. It mostly follows this great post with some additions from here, here. and here.
+Unless otherwise specified I use:
+export GNUPGHOME=~/gnupg mkdir $GNUPGHOME chmod go-rwx $GNUPGHOME export GNUPGBAK=~/gnupg-save mkdir $GNUPGBAK chmod go-rwx $GNUPGBAK  Preparing the YubiKey Note: The default admin pin is 12345678 and the default user pin is 123456. We start with a YubiKey after a factory reset (gpg --card-edit -&gt; admin -&gt; factory-reset)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rn.github.io/posts/2018-07-27-gpg-yubikey/" /><meta property="article:published_time" content="2018-07-27T11:07:40&#43;01:00"/>
+<meta property="article:modified_time" content="2018-07-27T11:07:40&#43;01:00"/>
 
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="">
+<meta itemprop="name" content="GnuPG and YubiKey">
+<meta itemprop="description" content="This creates a master key and secondary keys. The latter are stred on multiple YubiKeys. It mostly follows this great post with some additions from here, here. and here.
+Unless otherwise specified I use:
+export GNUPGHOME=~/gnupg mkdir $GNUPGHOME chmod go-rwx $GNUPGHOME export GNUPGBAK=~/gnupg-save mkdir $GNUPGBAK chmod go-rwx $GNUPGBAK  Preparing the YubiKey Note: The default admin pin is 12345678 and the default user pin is 123456. We start with a YubiKey after a factory reset (gpg --card-edit -&gt; admin -&gt; factory-reset).">
 
+
+<meta itemprop="datePublished" content="2018-07-27T11:07:40&#43;01:00" />
+<meta itemprop="dateModified" content="2018-07-27T11:07:40&#43;01:00" />
+<meta itemprop="wordCount" content="496">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="GnuPG and YubiKey"/>
+<meta name="twitter:description" content="This creates a master key and secondary keys. The latter are stred on multiple YubiKeys. It mostly follows this great post with some additions from here, here. and here.
+Unless otherwise specified I use:
+export GNUPGHOME=~/gnupg mkdir $GNUPGHOME chmod go-rwx $GNUPGHOME export GNUPGBAK=~/gnupg-save mkdir $GNUPGBAK chmod go-rwx $GNUPGBAK  Preparing the YubiKey Note: The default admin pin is 12345678 and the default user pin is 123456. We start with a YubiKey after a factory reset (gpg --card-edit -&gt; admin -&gt; factory-reset)."/>
 
       
     
@@ -51,11 +62,11 @@
   <body class="ma0 avenir bg-near-white production">
 
     
+   
+  
 
-  
-  
-  <header class="cover bg-top" style="background-image: url('https://rn.github.io/images/reichstag.jpg');">
-    <div class="bg-black-60">
+  <header>
+    <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="https://rn.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -105,58 +116,211 @@
   </div>
 </nav>
 
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          Posts
-        </h1>
-        
-      </div>
     </div>
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
-  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></main>
-    <section class="flex-ns flex-wrap justify-around mt5">
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">GnuPG and YubiKey</h1>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="/posts/2018-07-27-gpg-yubikey/" class="link black dim">
-        GnuPG and YubiKey
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      This creates a master key and secondary keys. The latter are stred on multiple YubiKeys. It mostly follows this great post with some additions from here, here. and here.
-Unless otherwise specified I use:
-export GNUPGHOME=~/gnupg mkdir $GNUPGHOME chmod go-rwx $GNUPGHOME export GNUPGBAK=~/gnupg-save mkdir $GNUPGBAK chmod go-rwx $GNUPGBAK  Preparing the YubiKey Note: The default admin pin is 12345678 and the default user pin is 123456. We start with a YubiKey after a factory reset (gpg --card-edit -&gt; admin -&gt; factory-reset).
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="/posts/2018-07-22-blog/" class="link black dim">
-        Blogging with hugo and GitHub Pages
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      This post describes how I configure my blog using hugo and GitHub pages. I chose hugo because it is simple, has no external dependencies, and generates static pages which are easily hostable on GitHub pages.
-There are a number of other guides out there, from which I copied some of the setup, notably this and this guide.
-hugo generates a static website under ./public and GitHub pages are served from a repository called &lt;username&gt;.
-    </div>
-  </div>
-</div>
-</div>
-      
-    </section>
-</article>
+      <time class="f6 mv4 dib tracked" datetime="2018-07-27T11:07:40&#43;01:00">July 27, 2018</time>
+    </header>
+
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<p>This creates a master key and secondary keys. The latter are stred on
+multiple YubiKeys. It mostly follows <a href="https://blog.josefsson.org/2014/06/23/offline-gnupg-master-key-and-subkeys-on-yubikey-neo-smartcard/">this great
+post</a>
+with some additions from
+<a href="https://gist.github.com/ageis/5b095b50b9ae6b0aa9bf">here</a>,
+<a href="https://github.com/drduh/YubiKey-Guide#purchase-yubikey">here</a>. and
+<a href="https://lists.gt.net/gnupg/users/76764#76764">here</a>.</p>
+
+<p>Unless otherwise specified I use:</p>
+
+<pre><code>export GNUPGHOME=~/gnupg
+mkdir $GNUPGHOME
+chmod go-rwx $GNUPGHOME
+
+export GNUPGBAK=~/gnupg-save
+mkdir $GNUPGBAK
+chmod go-rwx $GNUPGBAK
+</code></pre>
+
+<h2 id="preparing-the-yubikey">Preparing the YubiKey</h2>
+
+<p>Note: The default admin pin is <code>12345678</code> and the default user pin is
+<code>123456</code>. We start with a YubiKey after a factory reset (<code>gpg
+--card-edit</code> -&gt; <code>admin</code> -&gt; <code>factory-reset</code>).</p>
+
+<p><strong>Also, note that whenever you change YubiKeys in a computer it is important to execute <code>gpg --card-status</code>.</strong></p>
+
+<p>We start by changing the admin and user PIN and set some user
+information:</p>
+
+<pre><code class="language-sh">gpg --card-edit
+
+# enter admin menu
+admin
+
+# Set Name
+name
+
+# Set login name
+login
+
+# Set language (en)
+login
+
+# Change Admin PIN (select 3 and 1)
+passwd
+
+</code></pre>
+
+<p>Repeat the above for all YubiKeys</p>
+
+<h2 id="generating-a-primary-root-key">Generating a primary root key</h2>
+
+<p>The primary key will just be used to create subkeys, so we create a
+key with just certification capabilities.</p>
+
+<pre><code class="language-sh">gpg --expert --full-generate-key
+
+# Select:   '(8) RSA (set your own capabilities)'
+#   Toggle capabilities so that only 'Certify' is enabled
+# Keysize:  4096
+# Expiry:   0 (never)
+# Name/Email
+</code></pre>
+
+<p>The new key has the id: <code>B7C208779E105381F1D0EF2444C8157162862E16</code></p>
+
+<p>Add more identities</p>
+
+<pre><code class="language-sh">gpg --edit-key B7C208779E105381F1D0EF2444C8157162862E16
+
+adduid
+# Add name/email (repeat multiple times)
+
+uid 1
+primary
+# this sets the primary
+
+save
+</code></pre>
+
+<p>Backup:</p>
+
+<pre><code class="language-sh">cp -a $GNUPGHOME $GNUPGHOME-backup-masterkey
+</code></pre>
+
+<h2 id="create-subkeys">Create subkeys</h2>
+
+<p>This creates three subkeys which I use for signing, encryption, and
+authentication. These are 4096 bit keys (which are supported on the
+YubiKey 4).</p>
+
+<pre><code class="language-sh">gpg --expert --edit-key B7C208779E105381F1D0EF2444C8157162862E16
+
+# Signing key
+addkey
+# Select:  (4) RSA (sign only)
+# Keysize: 4096
+# Expiry:  0
+# -&gt; rsa4096/C6CE45B0EACFC0F3
+
+# Encryption key
+addkey
+# Select:  (6) RSA (encrypt only)
+# Keysize: 4096
+# Expiry:  0
+# -&gt; rsa4096/3F5F19349916A287
+
+# Authentication key
+addkey
+# Select:  (8) RSA (set your own capabilities)
+#   Disable sign with:        (S) Toggle the sign capability
+#   Disable encrypt with:     (E) Toggle the encrypt capability
+#   Enable authenticate with: (A) Toggle the authenticate capability
+# Keysize: 4096
+# Expiry:  0
+# -&gt; rsa4096/2E30AC9E42565BEA
+
+save
+</code></pre>
+
+<p>We have now created all the keys we need. Time to back them up. Keep
+the backup somewhere save!</p>
+
+<p>Backup:</p>
+
+<pre><code class="language-sh">gpg -a --export-secret-keys B7C208779E105381F1D0EF2444C8157162862E16 &gt; $GNUPGBAK/mastersubkey.sec
+gpg -a --export-secret-subkeys B7C208779E105381F1D0EF2444C8157162862E16 &gt; $GNUPGBAK/subkeys.sec
+gpg -a --export B7C208779E105381F1D0EF2444C8157162862E16 &gt; $GNUPGBAK/pubkey.asc
+cp $GNUPGHOME/openpgp-revocs.d/B7C208779E105381F1D0EF2444C8157162862E16.rev $GNUPGBAK
+cp -a $GNUPGHOME $GNUPGHOME-backup-mastersubkeys
+</code></pre>
+
+<h2 id="move-subkeys-yubikey">Move subkeys YubiKey</h2>
+
+<pre><code class="language-sh">gpg --edit-key B7C208779E105381F1D0EF2444C8157162862E16
+
+toggle
+
+# Move signing key (1 in this sequence)
+key 1
+keytocard
+key 1
+
+# Move encryption key (2 in this sequence)
+key 2
+keytocard
+key 2
+
+# Move authentication key (3 in this sequence)
+key 3
+keytocard
+key 3
+</code></pre>
+
+<p>Now, it is <strong>important</strong> to hit <code>ctrl-c</code> and <strong>not</strong> save as we are
+going to repeat the move to YubiKey for each of the YubiKey and only
+on the last one say <strong>save</strong>.</p>
+
+<h3 id="copy-keys-to-other-yubikeys">Copy keys to other YubiKeys</h3>
+
+<p>Restore the backup</p>
+
+<pre><code class="language-sh">rm -r $GNUPGHOME
+cp -r $GNUPGHOME-backup-mastersubkeys $GNUPGHOME
+</code></pre>
+
+<p>And then repeat the steps above</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">

@@ -5,7 +5,7 @@ date: 2018-07-27T11:07:40+01:00
 
 
 
-This creates a master key and secondary keys. The latter are stred on
+This creates a master key and secondary keys. The latter are stored on
 multiple YubiKeys. It mostly follows [this great
 post](https://blog.josefsson.org/2014/06/23/offline-gnupg-master-key-and-subkeys-on-yubikey-neo-smartcard/)
 with some additions from

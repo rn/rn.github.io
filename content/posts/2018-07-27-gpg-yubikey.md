@@ -1,7 +1,6 @@
 ---
 title: "GnuPG and YubiKey"
 date: 2018-07-27T11:07:40+01:00
-draft: true
 ---
 
 
